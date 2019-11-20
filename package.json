@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build",
+    "clean": "lerna run clean",
+    "develop": "lerna run develop",
+    "precommit": "lerna run lint-staged",
+    "pretty": "lerna run pretty",
+    "test": "lerna run test",
+    "typecheck": "lerna run typecheck"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lerna run lint-staged",
+      "prepare-commit-msg": "node scripts/prepare-commit-msg.js"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional",
+      "@commitlint/config-lerna-scopes"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "8.2.0",
+    "@commitlint/config-conventional": "8.2.0",
+    "@commitlint/config-lerna-scopes": "8.2.0",
+    "@octokit/rest": "16.34.0",
+    "commitizen": "4.0.3",
+    "conventional-changelog-cli": "2.0.25",
+    "conventional-recommended-bump": "6.0.2",
+    "cz-conventional-changelog": "3.0.2",
+    "cz-lerna-changelog": "2.0.2",
+    "execa": "3.2.0",
+    "fs-extra": "8.1.0",
+    "husky": "3.0.9",
+    "lerna": "3.18.3"
+  }
+}

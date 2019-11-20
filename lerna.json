@@ -1,0 +1,7 @@
+{
+  "version": "0.1.0",
+  "npmClient": "yarn",
+  "parallel": true,
+  "message": "chore: publish %s [ci skip]",
+  "useWorkspaces": true
+}

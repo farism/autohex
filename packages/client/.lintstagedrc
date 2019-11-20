@@ -1,0 +1,8 @@
+{
+  "linters": {
+    "**/*.{ts,tsx}": [
+      "npm run pretty",
+      "git add"
+    ]
+  }
+}
