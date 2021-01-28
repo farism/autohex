@@ -17,7 +17,7 @@
     "@fortawesome/fontawesome-free": "5.9.0",
     "bootstrap": "4.3.1",
     "directory-tree": "2.2.4",
-    "electron": "7.0.0",
+    "electron": "9.4.0",
     "electron-context-menu": "0.15.0",
     "frida": "12.7.16",
     "monaco-editor": "0.18.1",
