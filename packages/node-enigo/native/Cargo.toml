@@ -10,7 +10,7 @@ exclude = ["artifacts.json", "index.node"]
 neon-build = "0.3.3"
 
 [dependencies]
-neon = "0.3.3"
+neon = "0.10.1"
 enigo = "0.0.13"
 # enigo = { path = "../../../../enigo" }
 
